@@ -96,7 +96,7 @@ the truth table are true when we start. You then need to code the clues.
 This is done by creating a number of fact_items. These can be regarded
 as the atoms by which we build clues, like "Englishman", "horse" and
 "red". The first real clue, is that the Englishman lives in the red
-house. We then tell the CspSolver this by running connect on the
+house. We then tell the CspSolver this by running `connect()` on the
 fact_items representing Englishman and red. Under the hood, the solver
 now goes through the truth table and marks all values (2500 of them)
 where Englishman is combined with another colour than red, and all
